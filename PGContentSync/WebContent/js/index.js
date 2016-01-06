@@ -74,8 +74,8 @@ var app = {
 
 
     sync: function() {
-        var url = "https://github.com/timkim/zipTest/archive/master.zip"; 
-    	//var url = "http://http://pjomyjobs.azurewebsites.net/brochure.pdf"; 
+        //var url = "https://github.com/timkim/zipTest/archive/master.zip"; 
+    	var url = "http://http://pjomyjobs.azurewebsites.net/jms.zip"; 
         var sync = ContentSync.sync({ src: url, id: 'myapp', type: 'merge', copyRootApp: true });
 
         var setProgress = this.setProgress; 
@@ -95,8 +95,8 @@ var app = {
     },
     download: function() {
         document.getElementById("downloadExtractBtn").disabled = true;
-        var url = "https://github.com/timkim/zipTest/archive/master.zip"; 
-        //var url = "http://http://pjomyjobs.azurewebsites.net/brochure.pdf"; 
+        //var url = "https://github.com/timkim/zipTest/archive/master.zip"; 
+        var url = "http://http://pjomyjobs.azurewebsites.net/jms.zip"; 
         var extract = this.extract;
         var setProgress = this.setProgress; 
         var callback = function(response) {
